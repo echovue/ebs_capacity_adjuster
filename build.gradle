@@ -24,9 +24,9 @@ dependencies {
 //create a single Jar with all dependencies
 task fatJar(type: Jar) {
     manifest {
-        attributes 'Implementation-Title': 'Dynamo Capacity Adjustment Example',
+        attributes 'Implementation-Title': 'EBS Capacity Adjustment Example',
                 'Implementation-Version': version,
-                'Main-Class': 'com.example.DynamoCapacityUpdater'
+                'Main-Class': 'com.echovue.EBSCapacityUpdater'
     }
     baseName = project.name + '-all'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }

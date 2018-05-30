@@ -5,7 +5,8 @@ import com.amazonaws.services.lambda.runtime.events.ConfigEvent;
 public class EBSCapacityConfigEvent extends ConfigEvent {
     private String volumeId;
     private String region;
-    private Integer size;
+    private Integer maxSize;
+    private Integer increment;
 
     public String getVolumeId() {
         return volumeId;
@@ -23,11 +24,19 @@ public class EBSCapacityConfigEvent extends ConfigEvent {
         this.region = region;
     }
 
-    public Integer getSize() {
-        return size;
+    public Integer getMaxSize() {
+        return maxSize;
     }
 
-    public void setSize(Integer size) {
-        this.size = size;
+    public void setMaxSize(Integer maxSize) {
+        this.maxSize = maxSize;
+    }
+
+    public Integer getIncrement() {
+        return increment;
+    }
+
+    public void setIncrement(Integer increment) {
+        this.increment = increment;
     }
 }

@@ -14,7 +14,7 @@ public class EBSVolumeAdjusterTest {
         Context context = mock(Context.class);
         LambdaLogger logger = mock(LambdaLogger.class);
         when(context.getLogger()).thenReturn(logger);
-        EBSVolumeAdjuster ebsVolumeAdjuster = new EBSVolumeAdjuster();
+        //EBSVolumeAdjuster ebsVolumeAdjuster = new EBSVolumeAdjuster();
     }
 }
 
